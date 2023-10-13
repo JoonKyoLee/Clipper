@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class Problem2563 {
+
     private static final int FIRST_INDEX = 0;
     private static final int ARRAY_SIZE = 100;
     private static final int PAPER_LENGTH = 10;
