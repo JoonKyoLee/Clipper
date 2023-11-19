@@ -1,3 +1,5 @@
+package week2;
+
 import java.io.*;
 
 public class Problem10798 {

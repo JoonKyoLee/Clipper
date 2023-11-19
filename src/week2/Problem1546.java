@@ -1,3 +1,5 @@
+package week2;
+
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -10,7 +12,7 @@ public class Problem1546{
         int N = Integer.parseInt(br.readLine());
         int[] score = new int[N];
         double sum = 0;
-        StringTokenizer st = new StringTokenizer(br.readLine());;
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
         for(int i = 0; i < N; i++){
             score[i] = Integer.parseInt(st.nextToken());

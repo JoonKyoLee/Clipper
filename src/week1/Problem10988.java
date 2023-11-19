@@ -1,3 +1,5 @@
+package week1;
+
 import java.io.*;
 
 public class Problem10988 {
@@ -8,7 +10,7 @@ public class Problem10988 {
 
         StringBuilder str = new StringBuilder(br.readLine());
 
-        if(str.toString().equals(str.reverse().toString())){
+        if(str.equals(str.reverse().toString())){
             bw.write(1 + "\n");
         }
         else {
