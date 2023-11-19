@@ -22,7 +22,7 @@ public class Problem9012 {
             String input = br.readLine();
             if (input.charAt(0) == RIGHT || input.charAt(input.length() - 1) == LEFT) {
                 bw.write("NO\n");
-                continue;
+                break;
             }
 
             for (int j = 0; j < input.length(); j++) {
