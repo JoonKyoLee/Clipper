@@ -58,10 +58,12 @@ public class Problem11723 {
     }
 
     private static void add(int move) {
+        // OR 연산을 이용하며 (1 | (0 또는 1))의 형태를 보인다. 따라서 항상 1이 된다.
         number = number | (1 << (move - 1));
     }
 
     private static void remove(int move) {
+        // AND 연산을 이용하며 !1이 들어가기 때문에 항상 0이 된다.
         number = number & ~(1 << (move - 1));
     }
 
@@ -75,6 +77,7 @@ public class Problem11723 {
     }
 
     private static void toggle(int move) {
+        // XOR 연산을 이용해 존재하지 않을 경우에는 1 ^ 0 = 1, 존재할 경우에는 1 ^ 1 = 0이 된다.
         number = number ^ (1 << (move - 1));
     }
 }
